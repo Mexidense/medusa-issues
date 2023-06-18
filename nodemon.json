@@ -1,0 +1,6 @@
+{
+    "watch": ["src", ".eslintrc"],
+    "ext": ".ts",
+    "ignore": [],
+    "exec": "npm run lint && npx ts-node -r tsconfig-paths/register ./src/app.ts"
+  }

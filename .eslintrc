@@ -1,0 +1,41 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json",
+      "tsconfigRootDir": "./"
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "import"
+    ],
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:@typescript-eslint/strict"
+    ],
+    "settings": {
+      "import/parsers": {
+        "@typescript-eslint/parser": [".ts"]
+      },
+      "import/resolver": {
+        "typescript": {
+          "project": "./tsconfig.json"
+        }
+      }
+    },
+    "rules": {
+      "@typescript-eslint/no-extraneous-class": ["off"],
+      "@typescript-eslint/quotes": [
+        "error",
+        "single",
+        {
+          "allowTemplateLiterals": true
+        }
+      ],
+      "semi": "off",
+      "@typescript-eslint/semi": ["error"],
+      "no-multiple-empty-lines": ["error"],
+      "eol-last": ["error"]
+    }
+  }

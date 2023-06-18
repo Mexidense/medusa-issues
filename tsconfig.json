@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "target": "es6",                          
+    "module": "commonjs",                    
+    "lib": ["es6"],                     
+    "allowJs": true,
+    "outDir": "dist",                          
+    "rootDir": "src",
+    "strict": true,         
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@medusa-issues/*": ["./src/*"]
+    }
+  }
+}
