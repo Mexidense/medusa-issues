@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "start:dev": "npx nodemon",
-    "lint": "eslint . --ext .ts"
+    "lint": "node_modules/.bin/eslint . --ext .ts"
   },
   "keywords": [],
   "author": "Opensourcejam 2023 - Medusa team",
